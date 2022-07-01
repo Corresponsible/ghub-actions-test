@@ -1,0 +1,10 @@
+name: super-action
+on: workflow_dispatch
+jobs:
+  steve-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pwd
+        name: "Print current directory"
+
+      - run: echo "Hello, World. I'm Steve Jobs"
