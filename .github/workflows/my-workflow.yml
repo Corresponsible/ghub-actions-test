@@ -1,5 +1,5 @@
 name: super-action
-on: push
+on: [push, pull_request]
 jobs:
   steve-job:
     runs-on: ubuntu-latest

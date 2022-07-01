@@ -1,0 +1,13 @@
+name: super-action2
+on: [push, pull_request]
+jobs:
+  steve-job:
+    runs-on: ubuntu-latest
+    steps:
+        name: create file
+      - run: touch file.txt && echo "this is test file" >> file.txt
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: path/to/artifact/world.txt
