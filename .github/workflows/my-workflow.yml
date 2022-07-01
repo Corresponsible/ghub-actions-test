@@ -1,5 +1,5 @@
 name: super-action
-on: workflow_dispatch
+on: push
 jobs:
   steve-job:
     runs-on: ubuntu-latest
